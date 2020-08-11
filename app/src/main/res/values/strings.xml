@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Timer</string>
+    <string name="title_onreps">Reps</string>
+    <string name="title_ontime">Time</string>
+    <string name="title_onrest">Rest</string>
+    <string name="button_go">GO!</string>
+    <string name="format_minute">mm</string>
+    <string name="format_second">ss</string>
+    <string name="workout_done">Workout done!</string>
+    <string name="work">WORK!</string>
+    <string name="rest">REST!</string>
+
+</resources>

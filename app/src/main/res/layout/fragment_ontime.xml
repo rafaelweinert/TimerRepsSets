@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="timer.repssets.ui.onreps.OnrepsFragment">
+
+    <Button
+        android:id="@+id/buttonGoOntime"
+        android:layout_width="270dp"
+        android:layout_height="106dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/default_margin_1"
+        android:text="@string/button_go"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/addRestOntime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="220dp"
+        android:longClickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_baseline_add_24" />
+
+    <ImageButton
+        android:id="@+id/addWorkOntime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="345dp"
+        android:longClickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_baseline_add_24" />
+
+    <ImageButton
+        android:id="@+id/addRepsOntime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="470dp"
+        android:longClickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_baseline_add_24" />
+
+    <ImageButton
+        android:id="@+id/removeRestOntime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginBottom="220dp"
+        android:longClickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_baseline_remove_24" />
+
+    <ImageButton
+        android:id="@+id/removeWorkOntime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginBottom="345dp"
+        android:longClickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_baseline_remove_24" />
+
+    <ImageButton
+        android:id="@+id/removeRepsOntime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginBottom="470dp"
+        android:longClickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_baseline_remove_24" />
+
+    <EditText
+        android:id="@+id/textRepsOntime"
+        android:layout_width="120dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:hint="@string/title_onreps"
+        android:inputType="number"
+        android:text="0"
+        android:textSize="@dimen/default_textSize"
+        app:layout_constraintBottom_toBottomOf="@+id/removeRepsOntime"
+        app:layout_constraintEnd_toStartOf="@+id/addRepsOntime"
+        app:layout_constraintStart_toEndOf="@+id/removeRepsOntime"
+        app:layout_constraintTop_toTopOf="@+id/removeRepsOntime" />
+
+    <EditText
+        android:id="@+id/textRestSecondsOntime"
+        android:layout_width="80dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:hint="@string/format_second"
+        android:inputType="number"
+        android:text="00"
+        android:textSize="@dimen/default_textSize"
+        app:layout_constraintBottom_toBottomOf="@+id/addRestOntime"
+        app:layout_constraintEnd_toStartOf="@+id/addRestOntime"
+        app:layout_constraintTop_toTopOf="@+id/addRestOntime" />
+
+    <EditText
+        android:id="@+id/textWorkSecondsOntime"
+        android:layout_width="80dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:hint="@string/format_second"
+        android:inputType="number"
+        android:text="00"
+        android:textSize="@dimen/default_textSize"
+        app:layout_constraintBottom_toBottomOf="@+id/addWorkOntime"
+        app:layout_constraintEnd_toStartOf="@+id/addRestOntime"
+        app:layout_constraintTop_toTopOf="@+id/addWorkOntime" />
+
+    <EditText
+        android:id="@+id/textRestMinutesOntime"
+        android:layout_width="80dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:hint="@string/format_minute"
+        android:inputType="number"
+        android:text="00"
+        android:textSize="@dimen/default_textSize"
+        app:layout_constraintBottom_toBottomOf="@+id/removeRestOntime"
+        app:layout_constraintEnd_toStartOf="@+id/textRestSecondsOntime"
+        app:layout_constraintStart_toEndOf="@+id/removeRestOntime"
+        app:layout_constraintTop_toTopOf="@+id/removeRestOntime" />
+
+    <EditText
+        android:id="@+id/textWorkMinutesOntime"
+        android:layout_width="80dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:hint="@string/format_minute"
+        android:inputType="number"
+        android:text="00"
+        android:textSize="@dimen/default_textSize"
+        app:layout_constraintBottom_toBottomOf="@+id/removeWorkOntime"
+        app:layout_constraintEnd_toStartOf="@+id/textRestSecondsOntime"
+        app:layout_constraintStart_toEndOf="@+id/removeRestOntime"
+        app:layout_constraintTop_toTopOf="@+id/removeWorkOntime" />
+
+    <TextView
+        android:id="@+id/textViewRestOntime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/title_onrest"
+        android:textSize="@dimen/default_textSize_title"
+        app:layout_constraintBottom_toTopOf="@+id/textRestMinutesOntime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewWorkOntime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/title_ontime"
+        android:textSize="@dimen/default_textSize_title"
+        app:layout_constraintBottom_toTopOf="@+id/textWorkMinutesOntime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewRepsOntime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/title_onreps"
+        android:textSize="@dimen/default_textSize_title"
+        app:layout_constraintBottom_toTopOf="@+id/textRepsOntime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewResthelpOntime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text=":"
+        android:textSize="@dimen/default_textSize"
+        app:layout_constraintBottom_toBottomOf="@+id/textRestMinutesOntime"
+        app:layout_constraintEnd_toStartOf="@+id/textRestSecondsOntime"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toEndOf="@+id/textRestMinutesOntime"
+        app:layout_constraintTop_toTopOf="@+id/textRestMinutesOntime" />
+
+    <TextView
+        android:id="@+id/textViewWorkhelpOntime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text=":"
+        android:textSize="@dimen/default_textSize"
+        app:layout_constraintBottom_toBottomOf="@+id/textWorkMinutesOntime"
+        app:layout_constraintEnd_toStartOf="@+id/textRestSecondsOntime"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toEndOf="@+id/textRestMinutesOntime"
+        app:layout_constraintTop_toTopOf="@+id/textWorkMinutesOntime" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

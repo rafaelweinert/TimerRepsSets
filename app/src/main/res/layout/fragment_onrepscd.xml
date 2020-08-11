@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="timer.repssets.ui.onreps.OnrepsCDFragment">
+
+    <TextView
+        android:id="@+id/textViewOnrepscd"
+        android:layout_width="360dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewOnrepscdSeconds"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewOnrepscdMinutes"
+        android:layout_width="100dp"
+        android:layout_height="103dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginLeft="90dp"
+        android:ems="10"
+        android:gravity="center"
+        android:textSize="70sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewOnrepscdSeconds"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewOnrepscdSeconds"
+        android:layout_width="100dp"
+        android:layout_height="103dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginRight="90dp"
+        android:layout_marginBottom="350dp"
+        android:ems="10"
+        android:gravity="center"
+        android:textSize="70sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.86"
+        app:layout_constraintStart_toEndOf="@+id/textViewOnrepscdMinutes" />
+
+    <TextView
+        android:id="@+id/textViewResthelpOnrepscd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:gravity="center"
+        android:textSize="70sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewOnrepscdMinutes"
+        app:layout_constraintEnd_toStartOf="@+id/textViewOnrepscdSeconds"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toEndOf="@+id/textViewOnrepscdMinutes"
+        app:layout_constraintTop_toTopOf="@+id/textViewOnrepscdMinutes" />
+
+    <Button
+        android:id="@+id/buttonDoneOnrepscd"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="327dp"
+        android:layout_height="130dp"
+        android:layout_marginBottom="32dp"
+        android:text="DONE!"
+        android:textColor="#FF0000"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewOnrepscdRepsleft"
+        android:layout_width="364dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="50dp"
+        android:textColor="@android:color/black"
+        android:textSize="50sp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/buttonDoneOnrepscd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

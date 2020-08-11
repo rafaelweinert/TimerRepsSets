@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="timer.repssets.ui.onreps.OnrepsFragment">
+
+    <Button
+        android:id="@+id/buttonGoOnreps"
+        android:layout_width="270dp"
+        android:layout_height="106dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/default_margin_1"
+        android:text="@string/button_go"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/addRestOnreps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="240dp"
+        android:longClickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_baseline_add_24" />
+
+    <ImageButton
+        android:id="@+id/addRepsOnreps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="400dp"
+        android:longClickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_baseline_add_24" />
+
+    <ImageButton
+        android:id="@+id/removeRepsOnreps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginBottom="400dp"
+        android:longClickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_baseline_remove_24" />
+
+    <ImageButton
+        android:id="@+id/removeRestOnreps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginBottom="240dp"
+        android:longClickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_baseline_remove_24" />
+
+    <EditText
+        android:id="@+id/textRepsOnreps"
+        android:layout_width="120dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:hint="@string/title_onreps"
+        android:inputType="number"
+        android:text="0"
+        android:textSize="@dimen/default_textSize"
+        app:layout_constraintBottom_toBottomOf="@+id/removeRepsOnreps"
+        app:layout_constraintEnd_toStartOf="@+id/addRepsOnreps"
+        app:layout_constraintStart_toEndOf="@+id/removeRepsOnreps"
+        app:layout_constraintTop_toTopOf="@+id/removeRepsOnreps" />
+
+    <EditText
+        android:id="@+id/textRestSecondsOnreps"
+        android:layout_width="80dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:hint="@string/format_second"
+        android:inputType="number"
+        android:text="00"
+        android:textSize="@dimen/default_textSize"
+        app:layout_constraintBottom_toBottomOf="@+id/addRestOnreps"
+        app:layout_constraintEnd_toStartOf="@+id/addRestOnreps"
+        app:layout_constraintTop_toTopOf="@+id/addRestOnreps" />
+
+    <EditText
+        android:id="@+id/textRestMinutesOnreps"
+        android:layout_width="80dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:hint="@string/format_minute"
+        android:inputType="number"
+        android:text="00"
+        android:textSize="@dimen/default_textSize"
+        app:layout_constraintBottom_toBottomOf="@+id/removeRestOnreps"
+        app:layout_constraintEnd_toStartOf="@+id/textRestSecondsOnreps"
+        app:layout_constraintStart_toEndOf="@+id/removeRestOnreps"
+        app:layout_constraintTop_toTopOf="@+id/removeRestOnreps" />
+
+    <TextView
+        android:id="@+id/textViewRestOnreps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="@string/title_onrest"
+        android:textSize="@dimen/default_textSize_title"
+        app:layout_constraintBottom_toTopOf="@+id/textRestMinutesOnreps"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewRepsOnreps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="@string/title_onreps"
+        android:textSize="@dimen/default_textSize_title"
+        app:layout_constraintBottom_toTopOf="@+id/textRepsOnreps"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewResthelpOnreps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text=":"
+        android:textSize="@dimen/default_textSize"
+        app:layout_constraintBottom_toBottomOf="@+id/textRestMinutesOnreps"
+        app:layout_constraintEnd_toStartOf="@+id/textRestSecondsOnreps"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toEndOf="@+id/textRestMinutesOnreps"
+        app:layout_constraintTop_toTopOf="@+id/textRestMinutesOnreps" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

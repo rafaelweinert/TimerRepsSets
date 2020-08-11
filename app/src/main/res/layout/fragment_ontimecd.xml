@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="timer.repssets.ui.onreps.OnrepsCDFragment">
+
+    <TextView
+        android:id="@+id/textViewOntimecd"
+        android:layout_width="360dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginBottom="213dp"
+        android:gravity="center"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewOntimecdRepsleft"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewOntimecdMinutes"
+        android:layout_width="100dp"
+        android:layout_height="103dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginLeft="90dp"
+        android:ems="10"
+        android:gravity="center"
+        android:textSize="70sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewOntimecdSeconds"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewOntimecdSeconds"
+        android:layout_width="100dp"
+        android:layout_height="103dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginRight="90dp"
+        android:layout_marginBottom="350dp"
+        android:ems="10"
+        android:gravity="center"
+        android:textSize="70sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.86"
+        app:layout_constraintStart_toEndOf="@+id/textViewOntimecdMinutes" />
+
+    <TextView
+        android:id="@+id/textViewResthelpOntimecd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=":"
+        android:textSize="70sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewOntimecdMinutes"
+        app:layout_constraintEnd_toStartOf="@+id/textViewOntimecdSeconds"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toEndOf="@+id/textViewOntimecdMinutes"
+        app:layout_constraintTop_toTopOf="@+id/textViewOntimecdMinutes" />
+
+    <TextView
+        android:id="@+id/textViewOntimecdRepsleft"
+        android:layout_width="364dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="213dp"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewOntimecd" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
